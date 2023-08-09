@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,9 +32,7 @@
 .logo.husky:hover {
   filter: drop-shadow(0 0 2em #d99e82aa);
 }
-.logo.bootstrap:hover {
-  filter: drop-shadow(0 0 2em #7952b3aa);
-}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -41,7 +43,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  a:nth-child(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }

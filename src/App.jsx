@@ -5,11 +5,13 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="container text-center mt-5">
-      <h1 className="text-white display-1 fw-bold">
-        {count === 3 ? "pnpm is cool" : "pnpm"}
-      </h1>
-      <div className="mb-4">
+    <div className="text-center">
+      <p className="mb-5 text-5xl font-semibold text-white">
+        <a href="https://pnpm.io/" className="hover:font-medium">
+          {count === 3 ? "pnpm is cool" : "pnpm"}
+        </a>
+      </p>
+      <div className="mb-4 flex justify-center">
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="./vite.svg" className="logo" alt="Vite logo" />
         </a>
@@ -29,26 +31,26 @@ function App() {
         >
           <img src="./husky.svg" className="logo husky" alt="Husky logo" />
         </a>
-        <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+        <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">
           <img
-            src="./bootstrap.svg"
-            className="logo bootstrap"
-            alt="Bootstrap logo"
+            src="./tailwind.svg"
+            className="logo react"
+            alt="Tailwind logo"
           />
         </a>
       </div>
-      <h2 className="text-white">
-        Vite + React + JavaScript + ESLint + Husky + Bootstrap
+      <h2 className="text-4xl text-white">
+        Vite + React + JavaScript + ESLint + Husky + Tailwind
       </h2>
       <div className="my-3">
         <button
           type="button"
-          className="btn btn-primary"
+          className="text-white"
           onClick={() => setCount((count) => count + 1)}
         >
           count is {count}
         </button>
-        <p className="my-4 text-white">Click on the logos to learn more</p>
+        <p className="my-4 text-slate-500">Click on the logos to learn more</p>
       </div>
     </div>
   );
